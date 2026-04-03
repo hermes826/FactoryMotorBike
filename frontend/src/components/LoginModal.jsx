@@ -18,7 +18,7 @@ export default function LoginModal({ open, onClose }) {
     try {
       await login(email, password)
       onClose()
-      window.location.href = '/admin'
+      navigate('/admin')
     } catch (err) {
       setError(err.message)
     } finally {
