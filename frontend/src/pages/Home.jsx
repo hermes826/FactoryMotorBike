@@ -110,12 +110,31 @@ export default function Home() {
             </p>
 
             <div className="hero-actions">
-              <a href="#catalogo" className="btn-primary" data-testid="ver-motos-btn">
-                Ver motos disponibles <ChevronDown size={16} />
-              </a>
-            </div>
+  <a href="#catalogo" className="btn-primary" data-testid="ver-motos-btn">
+    Ver motos disponibles <ChevronDown size={16} />
+  </a>
 
-            <div className="contact-actions">
+  <details className="demo-bike-dropdown">
+    <summary className="btn-primary">
+      Demo Bike - Reserva tú prueba de moto BSA <ChevronDown size={16} />
+    </summary>
+
+    <div className="demo-bike-menu">
+      <a href="mailto:factorymotorbike@hotmail.com" className="demo-bike-link">
+        Correo: factorymotorbike@hotmail.com
+      </a>
+
+      <a
+        href="https://wa.me/34600000000?text=Hola,%20quiero%20reservar%20una%20prueba%20de%20moto%20BSA"
+        className="demo-bike-link"
+        target="_blank"
+        rel="noreferrer"
+      >
+        WhatsApp Demo Bike
+      </a>
+    </div>
+  </details>
+</div>
           
 
               
