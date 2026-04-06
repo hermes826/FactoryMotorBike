@@ -126,7 +126,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="https://wa.me/34600000000?text=Hola,%20quiero%20reservar%20una%20prueba%20de%20moto%20BSA"
+                    href="https://wa.me/34666208341?text=Hola,%20quiero%20reservar%20una%20prueba%20de%20moto%20BSA"
                     className="demo-bike-link"
                     target="_blank"
                     rel="noreferrer"
