@@ -122,7 +122,7 @@ export default function Home() {
 
                 <div className="demo-bike-menu">
                   <a href="mailto:factorymotorbike@hotmail.com" className="demo-bike-link">
-                    Correo: factorymotorbike@hotmail.com
+                    Correo electrónico
                   </a>
 
                   <a
