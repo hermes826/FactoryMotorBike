@@ -131,7 +131,7 @@ export default function Home() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    WhatsApp Demo Bike
+                    WhatsApp
                   </a>
                 </div>
               </details>
