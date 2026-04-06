@@ -17,6 +17,6 @@ Proyecto full stack con:
   - **Cloudinary** para imágenes
 
 ## Importante sobre las imágenes
-Las imágenes de las motos ya **no deben guardarse en el servidor**. El backend ahora sube cada archivo a Cloudinary y guarda en MongoDB la `secure_url` devuelta por Cloudinary.
+Las imágenes de las motos ya **no se guardan en el servidor**. El backend ahora sube cada archivo a Cloudinary y guarda en MongoDB la `secure_url` devuelta por Cloudinary.
 
 
