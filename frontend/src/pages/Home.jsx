@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ChevronDown, MapPin, Phone, Search, SlidersHorizontal } from 'lucide-react'
+import { ChevronDown, Phone, Search, SlidersHorizontal } from 'lucide-react'
 import BikeCard from '../components/BikeCard'
 import LoginModal from '../components/LoginModal'
 import { useAuth } from '../context/AuthContext'
@@ -110,35 +110,34 @@ export default function Home() {
             </p>
 
             <div className="hero-actions">
-  <a href="#catalogo" className="btn-primary" data-testid="ver-motos-btn">
-    Ver motos disponibles <ChevronDown size={16} />
-  </a>
+              <a href="#catalogo" className="btn-primary" data-testid="ver-motos-btn">
+                Ver motos disponibles <ChevronDown size={16} />
+              </a>
 
-  <details className="demo-bike-dropdown">
-    <summary className="btn-primary">
-      Demo Bike - Reserva tú prueba de moto BSA <ChevronDown size={16} />
-    </summary>
+              <details className="demo-bike-dropdown">
+                <summary className="demo-bike-summary">
+                  <span>Demo Bike - Reserva tu prueba de moto BSA</span>
+                  <ChevronDown size={16} />
+                </summary>
 
-    <div className="demo-bike-menu">
-      <a href="mailto:factorymotorbike@hotmail.com" className="demo-bike-link">
-        Correo: factorymotorbike@hotmail.com
-      </a>
+                <div className="demo-bike-menu">
+                  <a href="mailto:factorymotorbike@hotmail.com" className="demo-bike-link">
+                    Correo: factorymotorbike@hotmail.com
+                  </a>
 
-      <a
-        href="https://wa.me/34600000000?text=Hola,%20quiero%20reservar%20una%20prueba%20de%20moto%20BSA"
-        className="demo-bike-link"
-        target="_blank"
-        rel="noreferrer"
-      >
-        WhatsApp Demo Bike
-      </a>
-    </div>
-  </details>
-</div>
-          
+                  <a
+                    href="https://wa.me/34600000000?text=Hola,%20quiero%20reservar%20una%20prueba%20de%20moto%20BSA"
+                    className="demo-bike-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    WhatsApp Demo Bike
+                  </a>
+                </div>
+              </details>
+            </div>
 
-              
-
+            <div className="contact-actions">
               <details className="contact-hours-dropdown">
                 <summary>Horario</summary>
                 <div className="contact-hours-menu">
@@ -152,7 +151,6 @@ export default function Home() {
                 </div>
               </details>
             </div>
-
           </div>
         </div>
 
@@ -210,7 +208,7 @@ export default function Home() {
 
               <label className="toolbar-select">
                 <select value={conditionFilter} onChange={(e) => setConditionFilter(e.target.value)}>
-                  <option value="Todas">Todas las condiciones</option>
+                  <option value="todas">Todas las condiciones</option>
                   <option value="Nuevo">Nuevo</option>
                   <option value="Km0">KM 0</option>
                   <option value="Ocasión">Ocasión</option>
@@ -268,81 +266,74 @@ export default function Home() {
         </section>
 
         <section className="contact-section-dark">
-  <div className="container contact-grid-3">
-    <article className="info-card">
-      <p className="eyebrow">Ayuda</p>
-      <h2>Preguntas frecuentes</h2>
-      
+          <div className="container contact-grid-3">
+            <article className="info-card">
+              <p className="eyebrow">Ayuda</p>
+              <h2>Preguntas frecuentes</h2>
 
-      <div className="info-links">
-  <Link to="/financiacion" className="info-link-btn">
-    Financiación
-  </Link>
-  
-  <Link to="/seguros-moto" className="info-link-btn">
-    Garantía
-  </Link>
-  <Link to="/mantenimiento-basico" className="info-link-btn">
-    Compra
-  </Link>
-  <Link to="/motos-ocasion" className="info-link-btn">
-    Motos Ocasión
-  </Link>
-  <Link to="/venta" className="info-link-btn">
-    Venta
-  </Link>
-  <Link to="/recogida" className="info-link-btn">
-    Recogida
-  </Link>
-</div>
-    </article>
+              <div className="info-links">
+                <Link to="/financiacion" className="info-link-btn">
+                  Financiación
+                </Link>
 
-    <article className="info-card info-card-featured">
-      <p className="eyebrow">Contacto</p>
-      <h2>Visítanos</h2>
-      
-   
+                <Link to="/seguros-moto" className="info-link-btn">
+                  Garantía
+                </Link>
+                <Link to="/mantenimiento-basico" className="info-link-btn">
+                  Compra
+                </Link>
+                <Link to="/motos-ocasion" className="info-link-btn">
+                  Motos Ocasión
+                </Link>
+                <Link to="/venta" className="info-link-btn">
+                  Venta
+                </Link>
+                <Link to="/recogida" className="info-link-btn">
+                  Recogida
+                </Link>
+              </div>
+            </article>
 
-      {contact?.whatsapp && (
-        <a
-          href={`https://wa.me/34${contact.whatsapp}`}
-          className="btn-whatsapp"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Phone size={17} /> WhatsApp: {contact.whatsapp}
-        </a>
-      )}
-      <p>
-      </p>
+            <article className="info-card info-card-featured">
+              <p className="eyebrow">Contacto</p>
+              <h2>Visítanos</h2>
 
-      <a href="tel:+34922888020" className="contact-phone-box">
-        <Phone size={17} /> Teléfono fijo: 922 888 020
-      </a>
+              {contact?.whatsapp && (
+                <a
+                  href={`https://wa.me/34${contact.whatsapp}`}
+                  className="btn-whatsapp"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Phone size={17} /> WhatsApp: {contact.whatsapp}
+                </a>
+              )}
 
-      <a href="/sobre-nosotros" className="info-link-text">
-        Más sobre nosotros
-      </a>
-    </article>
+              <p></p>
 
-    <article className="info-card">
-      <p className="eyebrow">Compra / Venta</p>
-      <h2>¿Quieres vender tu moto?</h2>
-      <p className="info-card-text">
-        Si quieres vender tu moto, ponte en contacto con nosotros y valoraremos tu caso para darte una propuesta.
-      </p>
+              <a href="tel:+34922888020" className="contact-phone-box">
+                <Phone size={17} /> Teléfono fijo: 922 888 020
+              </a>
 
-      <a
-  href="mailto:factorymotorbike@hotmail.com"
-  className="btn-primary"
->
-  Contáctanos
-</a>
-    </article>
-  </div>
-</section>
-        
+              <a href="/sobre-nosotros" className="info-link-text">
+                Más sobre nosotros
+              </a>
+            </article>
 
+            <article className="info-card">
+              <p className="eyebrow">Compra / Venta</p>
+              <h2>¿Quieres vender tu moto?</h2>
+              <p className="info-card-text">
+                Si quieres vender tu moto, ponte en contacto con nosotros y valoraremos tu caso
+                para darte una propuesta.
+              </p>
+
+              <a href="mailto:factorymotorbike@hotmail.com" className="btn-primary">
+                Contáctanos
+              </a>
+            </article>
+          </div>
+        </section>
       </main>
 
       <footer className="home-footer">© 2026 Factory Motor Bike. Todos los derechos reservados.</footer>
