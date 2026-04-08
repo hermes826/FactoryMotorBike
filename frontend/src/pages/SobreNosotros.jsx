@@ -45,7 +45,7 @@ export default function SobreNosotros() {
                 <MapPin size={16} />  C. Juana Blanca, 43, 38203 La Laguna
               </p>
               <p className="about-inline">
-                <Phone size={16} /> 922 985 626
+                <Phone size={16} /> 922 888 020
               </p>
             </article>
           </section>
