@@ -65,17 +65,21 @@ export default function Home() {
     })
 
     results.sort((a, b) => {
-      switch (sortBy) {
-        case 'precio-asc':
-          return a.price - b.price
-        case 'precio-desc':
-          return b.price - a.price
-        case 'anio-desc':
-          return (b.year || 0) - (a.year || 0)
-        default:
-          return new Date(b.created_at || 0) - new Date(a.created_at || 0)
-      }
-    })
+  if (a.featured !== b.featured) {
+    return Number(b.featured) - Number(a.featured)
+  }
+
+  switch (sortBy) {
+    case 'precio-asc':
+      return a.price - b.price
+    case 'precio-desc':
+      return b.price - a.price
+    case 'anio-desc':
+      return (b.year || 0) - (a.year || 0)
+    default:
+      return new Date(b.created_at || 0) - new Date(a.created_at || 0)
+  }
+})
 
     return results
   }, [bikes, filter, brandFilter, conditionFilter, search, sortBy])
