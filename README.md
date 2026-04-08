@@ -7,7 +7,6 @@ Proyecto full stack con:
 - **Admin** con login y CRUD de motos
 
 ## Qué ha quedado preparado
-- Variables de entorno separadas con `.env.example`
 - Backend listo para usar **Cloudinary** en lugar de `uploads/` local
 - Frontend compatible con URLs externas de imagen
 - Proyecto preparado para desplegar con:
