@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+dimport { Link } from 'react-router-dom'
 import { ChevronLeft } from 'lucide-react'
 
 export default function MantenimientoBasico() {
@@ -17,9 +17,9 @@ export default function MantenimientoBasico() {
             <div className="info-page-content">
               <p></p>
 
-<b>¿Qué incluye el precio de la moto?</b>
+<b>¿Qué incluye el precio de la moto de segunda mano?</b>
 
-<p>Incluye impuestos, matriculación y traspaso.</p>
+<p>Incluye traspaso y garantía de un año.</p>
 
 <b>¿Se puede reservar una moto?</b>
 
