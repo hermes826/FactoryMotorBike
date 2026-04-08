@@ -22,7 +22,7 @@ export default function SegurosMoto() {
                 Nuestro objetivo es que compres con tranquilidad y confianza. Antes de la entrega, revisamos cada moto para asegurarnos de que cumple con unos estándares mínimos de funcionamiento y seguridad. Aun así, si surge cualquier problema cubierto por la garantía, nos comprometemos a darte una solución de forma rápida y profesional.
               </p>
               <p>
-                La garantía cubre defectos mecánicos no derivados del uso indebido, desgaste normal o mantenimiento incorrecto. En caso de incidencia, es importante contactar con nosotros lo antes posible para poder evaluar la situación y proceder según corresponda.
+                Ofrecemos 1 año de garantía excepto piezas eléctricas y de desgaste. Para cubrir las garantías se requiere realizar las revisiones en nuestros talleres.
               </p>
               <p>
                 Si tienes cualquier duda sobre la cobertura, duración o condiciones específicas, estaremos encantados de explicártelo de forma clara antes de la compra.
