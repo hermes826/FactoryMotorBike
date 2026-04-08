@@ -209,9 +209,9 @@ export default function Home() {
               <label className="toolbar-select">
                 <select value={conditionFilter} onChange={(e) => setConditionFilter(e.target.value)}>
                   <option value="todas">Todas las condiciones</option>
-                  <option value="Nuevo">Nuevo</option>
-                  <option value="Km0">KM 0</option>
-                  <option value="Ocasión">Ocasión</option>
+                  <option value="nuevo">Nuevo</option>
+                  <option value="km0">KM 0</option>
+                  <option value="ocasion">Ocasión</option>
                 </select>
               </label>
 
